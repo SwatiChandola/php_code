@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+class shape
+{
+    public:
+    void get_a()
+    {
+        cout<<"Hello"<<endl;
+    }
+};
+class triangle : public shape
+{
+    public:
+    void get_b()
+    {
+        cout<<"Hiee"<<endl;
+    }
+};
+class rectangle  : public shape
+{
+    public:
+    void get_c()
+    {
+        cout<<"Bieee"<<endl;
+    }
+};
+class circle: public shape
+{
+    public:
+    void get_d()
+    {
+        cout<<"Welcome"<<endl;
+    }
+};
+int main()
+{
+    cout<<"swati"<<endl;
+    circle obj;
+    obj.get_d();
+    rectangle ob;
+    ob.get_c();
+    triangle o;
+    o.get_b();
+    o.get_a();
+    return 0;
+}
