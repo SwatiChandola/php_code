@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+class student
+{
+    public:
+    void get_a()
+    {
+        cout<<"Hello"<<endl;
+    }
+};
+class test : public student
+{
+    public:
+    void get_b()
+    {
+        cout<<"Hiee"<<endl;
+    }
+};
+class sports  : public student 
+{
+    public:
+    void get_c()
+    {
+        cout<<"Bieee"<<endl;
+    }
+};
+class performance: public test , public sports
+{
+    public:
+    void get_d()
+    {
+        cout<<"Welcome"<<endl;
+    }
+};
+int main()
+{
+    cout<<"swati"<<endl;
+    performance obj;
+    obj.get_d();
+    obj.get_c();
+    obj.get_b();
+    student ob;
+    ob.get_a();
+    return 0;
+}
